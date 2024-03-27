@@ -19,7 +19,7 @@ JOBS = [
         'id': 3,
         'title': "Frontend Engineer",
         'location': "Chandigarh, India",
-        'salary': "Rs. 10,000,000"
+        'salary': "Rs. 30,000,000"
     },
     {
         'id': 4,
