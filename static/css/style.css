@@ -6,31 +6,34 @@
     font-style: normal;
 }
 
-body {
-    background: white;
-}
-
-h1 {
-    font-size: 40px;
-    text-align: center;
-}
-
 #banner {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius:15px;
 }
-
-h2 {
-    font-size: 32px;
-    text-align: center;   
-    font-weight: normal;
+.container{
+    max-width: 80% !important;
+    min-width: 80% !important;
 }
-#container{
-    max-width: 720px;
-    margin:auto;
+.jobParent{
+    display: flex;
 }
-#butDiv{
-    text-align: center;
+.jobCol1{
+    width:80%;
+    /* background: rgba(120, 212, 223, 0.399); */
+}
+.jobCol2{
+    width:20%;
+    /* background: rgba(128, 128, 128, 0.399); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnApply{
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 10px !important;
+    padding-left: 10px !important;
+    width:60%;
 }
