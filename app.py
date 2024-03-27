@@ -7,7 +7,7 @@ JOBS = [
         'id': 1,
         'title': "Software Developer",
         'location': "Noida, India",
-        'salary': "Rs. 20,000,000"
+        'salary': "Rs. 15,000,000"
     },
     {
         'id': 2,
