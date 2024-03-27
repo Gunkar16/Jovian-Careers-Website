@@ -13,36 +13,34 @@
 <body>
     {% include "nav.html" %}
     <div class="parent">
-        <img id="banner"class="object-fit-cover d-block mx-auto" src="/static/banner.jpg" alt="">
-        <h1 class="text-center">Jovian Careers</h1>
-        <h2 class="text-center">About Jovian</h2>
+        <img id="banner" class="" src="/static/banner.jpg" alt="">
+        <h1 class="text-center heading absolute">Jovian Careers</h1>
+        <!-- <h2 class="text-center">About Jovian</h2> -->
+        <p class="lead absolute info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum
+            recusandae soluta
+            dolore est magnam vero nemo tempora labore ipsam nihil inventore neque consequatur beatae corporis
+            illum, fugit commodi. Omnis!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+            est error at, eius ad facilis optio quidem
+            commodi reprehenderit aut neque nam accusamus sapiente repellendus perspiciatis officiis, nulla magni
+            cupiditate?
+        </p>
+        <!-- <p class="absolute trust">Trusted by the Earth 🌐</p> -->
     </div>
 
-        <div class="container">
-            
-            <p class="lead"><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eum recusandae soluta
-                dolore est magnam vero nemo tempora labore ipsam nihil inventore neque consequatur beatae corporis
-                illum, fugit commodi. Omnis!</mark>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-                est error at, eius ad facilis optio quidem
-                commodi reprehenderit aut neque nam accusamus sapiente repellendus perspiciatis officiis, nulla magni
-                cupiditate?
-                Modi ut numquam quaerat, maiores aliquam voluptate est reprehenderit enim iure atque officiis inventore
-                facere
-                provident sequi ratione ex quia dolore voluptatum! Enim fugiat debitis accusantium dolor. Tempora, ex
-                facilis
-            </p>
-            
-            <h2 class="text-center mt-4 mb-4">Job Openings</h2>
-            
-            <div>
-                {% include "jobs.html" %}
-            </div>
-            
-            <div class="text-center" id="footer">
-                <button class="btn btn-primary mt-4">Contact Us</button>
-            </div>
+    <div class="w-75 container">
+
+        <h2 class="text-center mt-4 mb-4">Job Openings</h2>
+
+        <div>
+            {% include "jobs.html" %}
         </div>
-        {% include "footer.html" %}
-    </body>
-    
+
+        <div class="text-center" id="footer">
+            <a href="mailto:gunkarsinghjohal@gmail.com?subject=Contact%20Us&body=Name%20%3A%0D%0AFeedback%20%2F%20Issue%20%3A"
+                class="btn btn-primary mt-4">Contact Us</a>
+        </div>
+    </div>
+    {% include "footer.html" %}
+</body>
+
 </html>

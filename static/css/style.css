@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 .roboto-regular {
     font-family: "Roboto", sans-serif;
@@ -12,32 +13,127 @@
     object-fit: cover;
     /* border-radius:15px; */
 }
-.container{
-    max-width: 100% !important;
-}
-.jobParent{
+
+/* .container {
+    width: 80% !important;
+} */
+
+.jobParent {
     display: flex;
 }
-.jobCol1{
-    width:80%;
+
+.jobCol1 {
+    width: 80%;
     /* background: rgba(120, 212, 223, 0.399); */
 }
-.jobCol2{
-    width:20%;
+
+.jobCol2 {
+    width: 20%;
     /* background: rgba(128, 128, 128, 0.399); */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btnApply{
+
+.btnApply {
     padding-top: 8px !important;
     padding-bottom: 8px !important;
     padding-left: 10px !important;
     padding-left: 10px !important;
-    width:60%;
+    width: 60%;
     min-width: 70px;
 }
-.footer{
+
+.footer {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.parent {
+    position: relative;
+}
+
+.parent::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    /* Change the color and opacity as needed */
+}
+
+.absolute {
+    position: absolute !important;
+
+}
+
+.heading {
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 80px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    letter-spacing: 0px;
+    /* font-weight: ; */
+    font-style: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 150px;
+    word-spacing: -20px;
+}
+
+.info {
+    top: 0;
+    left: 0;
+    color: white;
+    margin-top: 275px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 900;
+    width: 60%;
+    max-width: 800px;
+}
+
+.trust {
+    top: 0;
+    left: 0;
+    color: white;
+    margin-top: 450px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 850px) {
+    .info {
+        display: none;
+    }
+
+    .heading {
+        margin: auto;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        height:fit-content;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .info {
+        display: none;
+    }
+
+    .heading {
+        font-size: 70px;
+    }
+}
+
